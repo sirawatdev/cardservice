@@ -1,0 +1,11 @@
+
+Isquid:S1452V"&Remove usage of generic wildcard type.(€èÖÇùÿÿÿÿ8Ä—¿íÎ-
+©%squid:RedundantThrowsDeclarationCheck "lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(È¡ºÁşÿÿÿÿ8”²ÖîÎ-
+Isquid:S14526"&Remove usage of generic wildcard type.(›¦Ÿøÿÿÿÿ8Ä—¿íÎ-
+Dsquid:S1452+"&Remove usage of generic wildcard type.(°­˜À8Ä—¿íÎ-
+rsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìÈÉúÿÿÿÿ8¸…¾íÎ-
+Isquid:S1452"&Remove usage of generic wildcard type.(ìÈÉúÿÿÿÿ8¸…¾íÎ-
+Isquid:S1452 "&Remove usage of generic wildcard type.(È¡ºÁşÿÿÿÿ8Ä—¿íÎ-
+Dsquid:S1452c"&Remove usage of generic wildcard type.(…¯·“8Ä—¿íÎ-
+Isquid:S1452@"&Remove usage of generic wildcard type.(ïÑ¡Éûÿÿÿÿ8ß¯öîÎ-
+Isquid:S1452L"&Remove usage of generic wildcard type.(õ¾Åïûÿÿÿÿ8ß¯öîÎ-
