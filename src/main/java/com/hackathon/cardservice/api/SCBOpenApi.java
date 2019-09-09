@@ -87,9 +87,9 @@ public class SCBOpenApi {
         payBody.put("paymentAmount", body.getAmount());
         payBody.put("transactionType", "PAYMENT");
         payBody.put("transactionSubType", "BPA");
-        payBody.put("ref1", "2003002913251522");
-        payBody.put("ref2", "SCB");
-        payBody.put("accountTo", "267701494471979");
+        payBody.put("ref1", body.getCardId());
+        payBody.put("ref2", body.getUserId());
+        payBody.put("accountTo", "ECard+");
         payBody.put("merchantMetaData", meta);
 
         // request to api
