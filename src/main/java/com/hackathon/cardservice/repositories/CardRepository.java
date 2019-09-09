@@ -14,4 +14,7 @@ public interface CardRepository extends JpaRepository<Cards,Long> {
     @Query("FROM Cards u where u.userId = :userId")
     List<Cards> findAllByUserId(@Param("userId") Long userId);
 
+    @Query("FROM Cards u where u.digits = :digits")
+    Cards findAllByDigits(@Param("digits") Long digits);
+
 }

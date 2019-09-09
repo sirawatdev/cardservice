@@ -4,6 +4,7 @@ package com.hackathon.cardservice.controller;
 import com.hackathon.cardservice.constants.Response;
 import com.hackathon.cardservice.exception.CardException;
 import com.hackathon.cardservice.model.Cards;
+import com.hackathon.cardservice.model.Refs;
 import com.hackathon.cardservice.model.cardupdate.AmountCard;
 import com.hackathon.cardservice.model.cardupdate.TypeDigitsCard;
 import com.hackathon.cardservice.model.response.ResponseModel;
@@ -40,6 +41,16 @@ public class CardController {
                 Response.SUCCESS_GET.getMessage());
 
         Cards resp = cardService.createCard(body);
+        return ResponseEntity.ok(new ResponseModel(status, resp));
+    }
+
+    @PostMapping(path = "/ref/create")
+    public HttpEntity<ResponseModel> createRef(@Valid @RequestBody Refs body) throws CardException{
+        log.info("From Card Controller do : create card type is ="+body.getRefId());
+        StatusModel status = new StatusModel(Response.SUCCESS_GET.getCode(),
+                Response.SUCCESS_GET.getMessage());
+
+        Refs resp = cardService.createRef(body);
         return ResponseEntity.ok(new ResponseModel(status, resp));
     }
 

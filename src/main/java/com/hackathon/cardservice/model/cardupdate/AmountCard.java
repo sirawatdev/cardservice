@@ -17,4 +17,7 @@ public class AmountCard {
 
     @NotNull
     private Long amount;
+
+    @NotNull
+    private String refCode;
 }
