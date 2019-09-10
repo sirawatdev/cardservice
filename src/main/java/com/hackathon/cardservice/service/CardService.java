@@ -104,6 +104,19 @@ public class CardService {
         }
     }
 
+    public Cards addAmountCard(AmountCard body) throws CardException{
+        //REF86431506191700:51848643
+
+        Cards card = cardRepository.findAllById(body.getId());
+        if(card==null){
+            throw new CardException(Response.CARD_NOTFOUND,HttpStatus.BAD_REQUEST);
+        }
+        else{
+            card.setAmount(body.getAmount());
+            return cardRepository.save(card);
+        }
+    }
+
     public Cards updateInformationCard(@PathVariable @Min(1) TypeDigitsCard body) throws CardException{
 
         Cards card = cardRepository.findAllById(body.getId());

@@ -77,6 +77,17 @@ public class CardController {
         return ResponseEntity.ok(new ResponseModel(status, resp));
     }
 
+    @PutMapping(path = "/add/{id}")
+    public HttpEntity<ResponseModel> addAmountCardByCardId(@Valid @RequestBody AmountCard body, @PathVariable @Min(1) Long id) throws CardException {
+        log.info("From Card Controller do : create card type is ="+body.getAmount());
+        StatusModel status = new StatusModel(Response.SUCCESS_GET.getCode(),
+                Response.SUCCESS_GET.getMessage());
+        body.setId(id);
+        Cards resp = cardService.addAmountCard(body);
+
+        return ResponseEntity.ok(new ResponseModel(status, resp));
+    }
+
     @PutMapping(path = "/amount/{id}")
     public HttpEntity<ResponseModel> updateAmountCardByCardId(@Valid @RequestBody AmountCard body, @PathVariable @Min(1) Long id) throws CardException {
         log.info("From Card Controller do : create card type is ="+body.getAmount());
