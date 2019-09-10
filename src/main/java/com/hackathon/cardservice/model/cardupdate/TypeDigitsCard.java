@@ -22,5 +22,5 @@ public class TypeDigitsCard {
     private Integer type;
 
     @NotNull
-    private Long digits;
+    private String digits;
 }

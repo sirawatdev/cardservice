@@ -20,10 +20,10 @@ public class Refs {
     private Long id;
 
     @NotNull
-    private Long refId;
+    private String refId;
 
     @NotNull
-    private Long cardId;
+    private String cardId;
 
     private Integer status=0;
 }

@@ -20,7 +20,7 @@ public class Cards {
     private Long id;
 
     @NotNull
-    private Long digits;
+    private String digits;
 
     @NotNull
     private Integer type;

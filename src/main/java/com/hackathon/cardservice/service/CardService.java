@@ -68,15 +68,15 @@ public class CardService {
         //REF86431506191700:51848643
         int colon;
         int length;
-        Long cardId;
-        Long refCode;
+        String cardId;
+        String refCode;
 
         if(body.getRefCode().contains(":") && body.getRefCode().contains("REF")){
             colon = body.getRefCode().indexOf(":");
             length = body.getRefCode().length();
-            refCode = Long.parseLong(body.getRefCode().substring(3, colon));
+            refCode = body.getRefCode().substring(3, colon);
 
-            cardId = Long.parseLong(body.getRefCode().substring(colon+1, length));
+            cardId = body.getRefCode().substring(colon+1, length);
             System.out.println(cardId);
 
             Refs ref = refRepository.findAllByCardIdAndRefId(cardId,refCode);
