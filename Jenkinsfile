@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        sh 'echo helloworld'
+        sh 'gradle help --scan'
         // git(
         //    url: 'git@github.com:digitalventures/lbc.git',
         //    branch: branch,
