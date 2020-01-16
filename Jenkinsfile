@@ -13,6 +13,7 @@ pipeline {
       steps {
         // sh 'gradle --version'
         sh 'gradle build -Pversion=1-2'
+        sh 'ls -al'
         // git(
         //    url: 'git@github.com:digitalventures/lbc.git',
         //    branch: branch,
