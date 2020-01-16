@@ -12,7 +12,7 @@ pipeline {
     stage('Cloning Git') {
       steps {
         // sh 'gradle --version'
-        sh 'gradle clean build -Pversion=1-2'
+        sh 'gradle build -Pversion=1-2'
         // git(
         //    url: 'git@github.com:digitalventures/lbc.git',
         //    branch: branch,
