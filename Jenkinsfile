@@ -6,7 +6,7 @@ pipeline {
   }
   agent { label 'master' }
   tools {
-      gradle "GRADLE_LATEST"
+      gradle "Gradle-build"
   }
   stages {
     stage('Cloning Git') {
