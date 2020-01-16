@@ -5,10 +5,13 @@ pipeline {
     app = ''
   }
   agent { label 'master' }
+  tools {
+      gradle "GRADLE_LATEST"
+  }
   stages {
     stage('Cloning Git') {
       steps {
-        sh 'gradle help --scan'
+        sh 'gradle --version'
         // git(
         //    url: 'git@github.com:digitalventures/lbc.git',
         //    branch: branch,
