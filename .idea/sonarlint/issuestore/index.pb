@@ -45,3 +45,10 @@ Fsrc/main/java/com/hackathon/cardservice/controller/CardController.java,3/6/36a
 Lsrc/main/java/com/hackathon/cardservice/model/cardupdate/TypeDigitsCard.java,5/7/572754c888f87f8f8cc10807ebc889a1f04924cc
 x
 Hsrc/main/java/com/hackathon/cardservice/model/cardupdate/AmountCard.java,9/f/9fc902dc4c6cdb320da704e1eee27f39f9a4ac2a
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+w
+Gsrc/main/java/com/hackathon/cardservice/repositories/RefRepository.java,e/8/e883246c835a45d8fde7834f6e2b18f91840072c
+g
+7src/main/java/com/hackathon/cardservice/model/Refs.java,8/0/806e23c69f02abec65bb76c094dd25d747d02c09
